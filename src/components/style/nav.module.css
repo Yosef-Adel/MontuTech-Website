@@ -1,0 +1,137 @@
+.nav{
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 8%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 555;
+    height: 6rem;
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+.imgContainer {
+    width: 3rem;
+    margin-right: 1.5rem; 
+}
+.imgContainer img {
+    width: 100%;
+   
+}
+.logoContainer h1 {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.navOptions ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    padding: 1rem 0;
+}
+
+.navOptions ul li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    transition: .5s ease;
+ 
+}
+.bur {
+    display: none;
+    z-index: 100;
+}
+
+.activeLink  {
+    background-image: linear-gradient(
+        to right bottom ,
+        rgb(10, 119, 16),
+        rgb(19, 16, 218));
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.navOptions ul li a:hover {
+    background-image: linear-gradient(
+        to right bottom ,
+        rgba(10, 119, 15, 0.5),
+        rgba(19, 16, 218, 0.5));
+    
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+@media screen and (max-width: 720px) {
+    .options{
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-image: linear-gradient(
+            to right bottom ,
+            rgb(19, 177, 27),
+            rgb(18, 14, 253));
+        padding: 50px;
+        border-radius: 50%;
+        align-items: center;
+        transition: .5s ease;
+        z-index: 522;
+    }
+    .optionsActive {
+        right: -250px;
+        top: -250px;
+        
+    }
+    .sleepOptions{
+        right: -550px;
+        top: -550px;
+    }
+    .links {
+        margin-top: 50%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bur {
+        display: inline-block;
+        
+    }
+    .options a {
+        margin: 25px;
+      
+    }
+    
+    .navOptions {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .navOptions ul li {
+        margin: 0;
+        margin-top: 4rem;;
+       
+       
+    }
+   
+    .activeLink  {
+        background-image: linear-gradient(
+            to right bottom ,
+            rgb(45, 68, 3),
+            rgb(7, 8, 77));
+        padding: 1rem 2rem;
+        border-radius: 5px;
+    }
+    .navOptions ul li a:hover {
+        background-image: linear-gradient(
+            to right bottom ,
+            rgb(45, 68, 3,.5),
+            rgb(7, 8, 77,.5));
+        
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.801);
+    }
+}

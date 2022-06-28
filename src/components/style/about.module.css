@@ -1,0 +1,41 @@
+.about {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(
+    to right bottom ,
+    rgba(9, 255, 42, 0.6),
+    rgba(17, 13, 255, 0.8));
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 25vh, 100% 0  ,100% 75vh , 0 100%);
+    margin-top: 2rem;
+}
+.textBox {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.layoutTitle {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+.layoutTitleMain {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInleft 1s ease-out;
+    margin-bottom: 2rem;
+}
+.layoutTitlesub {
+    display: block;
+    font-size: 2rem ;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation: moveInright 1s ease-out;
+    line-height: 4rem;
+}

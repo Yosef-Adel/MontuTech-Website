@@ -1,0 +1,9 @@
+.aboutContainer {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    margin-bottom: 10rem;
+    align-items: center;
+}

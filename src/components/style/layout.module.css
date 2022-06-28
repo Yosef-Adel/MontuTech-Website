@@ -1,0 +1,135 @@
+.layout {
+    height: 92vh;
+    position: relative;
+    background-image: linear-gradient(
+    to right bottom ,
+    rgba(9, 255, 42, 0.6),
+    rgba(17, 13, 255, 0.8)), 
+    url("../../img/bg.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0  ,100% 75vh , 0 100%);
+    
+}
+.fix {
+    z-index: -1;
+}
+.textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.layoutTitle {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+.layoutTitleMain {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInleft 1s ease-out;
+    margin-bottom: 2rem;
+}
+.layoutTitlesub {
+    display: block;
+    font-size: 2rem ;
+    font-weight: 700;
+    letter-spacing: 1.1rem;
+    animation: moveInright 1s ease-out;
+    line-height: 4rem;
+}
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 4rem;
+    transition: all .2s;
+    position: relative;
+    background-color: #fff;
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: #fff;
+    color: #777;
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.btn {
+    animation: moveIntop 1s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+@keyframes moveInleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes moveInright {
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}
+@keyframes moveIntop {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+  
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+    
+}

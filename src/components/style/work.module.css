@@ -1,0 +1,68 @@
+.workSection {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-image: linear-gradient(
+        to right bottom ,
+        rgba(9, 255, 42, 0.6),
+        rgba(17, 13, 255, 0.8));
+
+       
+}
+
+.titleSecondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,   rgb(0, 59, 223),
+    rgb(0, 2, 126));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+}
+.titleSecondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.work .content {
+    flex-direction:row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.work .content .card {
+    width: 350px;
+    margin: 15px;
+
+}
+.work .content .card .cardimg {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work .content .card .cardimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.work .content .card .cardimg img:hover {
+    transform: scale(1.2);
+}
+.bannerFade {
+    position: relative;
+    z-index: 33;
+    height: 7rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(0, 0, 0, 0.61),
+        rgb(0, 0, 0)
+    );
+}

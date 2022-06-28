@@ -1,0 +1,31 @@
+
+
+.sectionTitel {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.titleSecondary {
+    font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right,   rgba(0, 59, 223, 0.678),
+  rgba(95, 231, 68, 0.8));
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s;
+}
+.titleSecondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    

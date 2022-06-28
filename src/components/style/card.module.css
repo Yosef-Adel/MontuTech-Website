@@ -1,0 +1,127 @@
+.col {
+   min-width: 300px;
+    
+}
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 35rem;
+    margin: 2rem;
+    
+ }
+
+ .cardSide {
+
+    height: 35rem;
+    text-align: center;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+ }
+ .cardFront {
+    background-color: #fff;
+ }
+.cardBack {
+    transform: rotateY(180deg);
+    padding: 1rem;
+    box-sizing: border-box;
+    
+}
+.Card1Back {
+    background-image: linear-gradient(to right bottom, #6eb6fa, #22448f);
+   
+}
+.Card2Back{
+    background-image: linear-gradient(to right bottom, #83ebd1, #059c88);
+}
+.Card3Back{
+    background-image: linear-gradient(to right bottom, #18e4a7, #419212);
+}
+.card:hover .cardFront {
+    transform: rotateY(-180deg); }
+  .card:hover .cardBack {
+    transform: rotateY(0); }
+ .cardPicture1 {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image:  url(../../img/card1.jpg); 
+
+ }
+ .cardPicture2 {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image:  url(../../img/card2.jpg); 
+
+ }
+
+ .cardPicture3 {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image:  url(../../img/card3.jpg); 
+
+ }
+
+
+ .cardHeading {
+   margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,   rgba(0, 59, 223, 0.678),
+    rgba(95, 231, 68, 0.8));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+ }
+ 
+ .cardDetails {
+   font-size: 2.7rem;
+   margin-top: 50%;
+   transform: translateY(-15%);
+   text-transform: uppercase;
+   color: white;
+}
+
+@media screen and (max-width: 450px) {
+
+   .cardDetails {
+    
+      transform: translateY(-40%);
+      
+   }
+ 
+ }
+
+ @media screen and (max-width: 350px) {
+   .cardDetails {
+    
+      transform: translateY(-50%);
+      
+   }
+ 
+ 
+ }
