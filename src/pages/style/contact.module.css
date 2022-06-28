@@ -1,106 +1,106 @@
 .container {
-    height: 100vh;
-    position: relative;
-    background-image: linear-gradient(
-    to right bottom ,
-    rgba(9, 255, 42, 0.6),
-    rgba(17, 13, 255, 0.8));
-    background-size: cover;
-    background-position: top;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+  to right bottom ,
+  rgba(9, 255, 42, 0.6),
+  rgba(17, 13, 255, 0.8));
+  background-size: cover;
+  background-position: top;
 
 }
 .formBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    width: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 40rem;
 }
 
-  .control {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 100%;
-  }
+.control {
+position: relative;
+padding: 15px 0 0;
+margin-top: 10px;
+width: 100%;
+}
 
 .formField {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid #080079;
-  outline: 0;
-  font-size: 1.3rem;
-  color: #fff;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-  margin-bottom: 1rem;
+font-family: inherit;
+width: 100%;
+border: 0;
+border-bottom: 2px solid #080079;
+outline: 0;
+font-size: 1.3rem;
+color: #fff;
+padding: 7px 0;
+background: transparent;
+transition: border-color 0.2s;
+margin-bottom: 1rem;
 }
 .formField::placeholder {
-  color: transparent;
+color: transparent;
 }
 
 .formField:placeholder-shown ~ .formLable {
-  font-size: 1.3rem;
-  cursor: text;
-  top: 20px;
+font-size: 1.3rem;
+cursor: text;
+top: 20px;
 }
 .formLable {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: #080079;
-  font-size: 2rem;
-  font-weight: 800;
+position: absolute;
+top: 0;
+display: block;
+transition: 0.2s;
+font-size: 1rem;
+color: #080079;
+font-size: 2rem;
+font-weight: 800;
 }
 
 .formField:focus{
-  padding-bottom: 6px;
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, rgb(0, 153, 33), rgb(19, 23, 255));
-  border-image-slice: 1;
+padding-bottom: 6px;
+font-weight: 700;
+border-width: 3px;
+border-image: linear-gradient(to right, rgb(0, 153, 33), rgb(19, 23, 255));
+border-image-slice: 1;
 }
 .formField:focus ~ .formLable {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: #0003c4;
-  font-weight: 700;
-  font-size: 1.5rem;
+position: absolute;
+top: 0;
+display: block;
+transition: 0.2s;
+font-size: 1rem;
+color: #0003c4;
+font-weight: 700;
+font-size: 1.5rem;
 }
 .formField:required, .formLable:invalid {
-  box-shadow: none;
+box-shadow: none;
 }
-  .control span {
-    color: red;
-    font-size: 1.5rem;
-  }
-  .actions button {
-    text-transform: uppercase;
-    background-image: linear-gradient(to right,   rgb(0, 59, 223),
-    rgb(0, 2, 126));
-    color: white;
-    padding: 1rem 4rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 2rem;
-     letter-spacing: .1rem;
-     transition: 0.5s;
+.control span {
+  color: red;
+  font-size: 1.5rem;
+}
+.actions button {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right,   rgb(0, 59, 223),
+  rgb(0, 2, 126));
+  color: white;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 2rem;
+   letter-spacing: .1rem;
+   transition: 0.5s;
 
-  }
-  
-  .actions button:hover {
-    background-image: linear-gradient(to right,   rgb(72, 109, 209),
-    rgb(51, 53, 180));
-  }
+}
 
-  .control {
-    margin-bottom: 3rem;
-  }
+.actions button:hover {
+  background-image: linear-gradient(to right,   rgb(72, 109, 209),
+  rgb(51, 53, 180));
+}
+
+.control {
+  margin-bottom: 3rem;
+}

@@ -34,8 +34,10 @@ const Card = ({id}) => {
         </div>
 
         <div className={`${classes.cardBack} ${classes.cardSide} ${classes.Card2Back}`}>
-            <h4 className={classes.cardDetails}>You imagine we excute,
-         Your imagination to your website</h4>
+          <div className={classes.cardDetails}>
+          <h4 >give your customers the experience they deserve</h4>
+
+          </div>
         </div>
 
       </div>
@@ -47,11 +49,11 @@ const Card = ({id}) => {
            <div className={ `${ classes.cardPicture3} `} >
            </div>
            <h4 className={classes.cardHeading}>
-               UI ux design
+               mobile development
            </h4>
         </div>
         <div className={`${classes.cardBack} ${classes.cardSide} ${classes.Card3Back}`}>
-          <h4 className={classes.cardDetails}>give your customers the experience they deserve</h4>
+          <h4 className={classes.cardDetails}>make your business have better accessibility from mobile devices</h4>
         </div>
       </div>
       

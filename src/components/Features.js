@@ -30,9 +30,9 @@ const Features = () => {
             <div className={classes.col}>
                 
                 <div className={classes.composition}>
-                    <img src={img1} className={`${classes.compositionphoto} ${classes.compositionphotop1}`}/>
-                    <img src={img2} className={`${classes.compositionphoto} ${classes.compositionphotop2}`}/>
-                    <img src={img3} className={`${classes.compositionphoto} ${classes.compositionphotop3}`}/>
+                    <img src={img1} className={`${classes.compositionphoto} ${classes.compositionphotop1}`} alt = 'feature'/>
+                    <img src={img2} className={`${classes.compositionphoto} ${classes.compositionphotop2}`} alt = 'feature' />
+                    <img src={img3} className={`${classes.compositionphoto} ${classes.compositionphotop3}`}  alt = 'feature'/>
 
 
                 

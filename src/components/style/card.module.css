@@ -32,6 +32,9 @@
     transform: rotateY(180deg);
     padding: 1rem;
     box-sizing: border-box;
+    display: flex;
+   align-items: center;
+   
     
 }
 .Card1Back {
@@ -99,29 +102,13 @@
  }
  
  .cardDetails {
+   position: relative;
    font-size: 2.7rem;
-   margin-top: 50%;
-   transform: translateY(-15%);
    text-transform: uppercase;
    color: white;
 }
 
-@media screen and (max-width: 450px) {
 
-   .cardDetails {
-    
-      transform: translateY(-40%);
-      
-   }
- 
- }
-
- @media screen and (max-width: 350px) {
-   .cardDetails {
-    
-      transform: translateY(-50%);
-      
-   }
- 
- 
- }
+.cardDetails h4 {
+   margin: 0;
+}

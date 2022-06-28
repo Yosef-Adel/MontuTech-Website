@@ -1,11 +1,11 @@
 import React from 'react'
 import classes from './style/contact.module.css'
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import {Formik, Field, ErrorMessage, Form } from 'formik'
 import * as Yup from 'yup'
 const ContactUs = () => {
-  const [formData, setFormData] = useState({name: '', email: '', message:''});
+ 
   const form = useRef();
   const initialValues = {
     name: "",
@@ -28,7 +28,7 @@ const validationSchema= Yup.object().shape({
     resetForm();
   }
   return (
-    <div className= {classes.container}>
+    <div  className= {classes.container} >
       <Formik initialValues={initialValues}  validationSchema={validationSchema} onSubmit={onSubmit}  >
       <Form ref={form}  className={classes.formBox} >
         <div className={classes.control}>
