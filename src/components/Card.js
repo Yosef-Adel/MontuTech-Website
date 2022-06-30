@@ -16,7 +16,7 @@ const Card = ({id}) => {
         </div>
 
         <div className={`${classes.cardBack} ${classes.cardSide} ${classes.Card1Back}`}>
-        <h4 className={classes.cardDetails}>You imagine we excute,
+        <h4 className={classes.cardDetails}>You imagine we execute,
          Your imagination to your website</h4>
         </div>
 

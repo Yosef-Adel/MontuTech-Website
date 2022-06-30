@@ -12,7 +12,7 @@ const About = () => {
     <div className={classes.aboutContainer}>
       <AboutCard name = 'Yosef Adel' position = 'Full Stack Developer' img = {img} />
       <AboutCard name = 'Omar Alaa' position = 'Front end Developer' img = {img2} />
-      <AboutCard name = 'Oamr Nashat' position = 'Devops' img = {img3} />
+      <AboutCard name = 'Omar Nashat' position = 'Devops' img = {img3} />
       <AboutCard name = 'Abdelrahman Ezzat' position = 'back end Developer' img = {img4} />
       <AboutCard name = 'Farah Mohammed' position = 'back end Developer' img = {img5} />
 
